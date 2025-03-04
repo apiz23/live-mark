@@ -37,7 +37,7 @@ const MarkdownPreview: React.FC<MarkdownPreviewProps> = ({ markdown }) => {
 
 	return (
 		<div
-			className="w-1/2 p-4 overflow-y-auto bg-white border-l border-gray-300 markdown-content"
+			className="p-4 overflow-y-auto bg-neutral-100 border-gray-300 border-y border-r h-full markdown-content"
 			dangerouslySetInnerHTML={{ __html: parsedMarkdown }}
 		/>
 	);

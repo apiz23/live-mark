@@ -181,7 +181,7 @@
 
 /* Inline Code */
 .markdown-content code:not(pre code) {
-	@apply text-blue-200 px-1 py-0.5 rounded;
+	@apply bg-gray-900 text-blue-200 px-1 py-0.5 rounded;
 }
 
 /* Links */

@@ -1,16 +1,28 @@
-"use client";
-
-import { useState } from "react";
-import MarkdownEditor from "@/components/markdown-editor";
-import MarkdownPreview from "@/components/markdown-preview";
+import Editor from "../components/Editor";
 
 export default function Home() {
-	const [markdown, setMarkdown] = useState<string>("");
-
 	return (
-		<div className="flex h-screen">
-			<MarkdownEditor markdown={markdown} setMarkdown={setMarkdown} />
-			<MarkdownPreview markdown={markdown} />
-		</div>
+		<>
+			<div className="h-fit">
+				<div className="mx-auto max-w-screen-xl px-4 py-20">
+					<div className="mx-auto max-w-3xl text-center">
+						<h1 className="text-3xl font-extrabold sm:text-7xl text-[#F7F7F7]">
+							Write in Markdown
+							<br />
+							<strong className="font-extrabold text-2xl sm:text-6xl sm:block">
+								Preview Instantly!
+							</strong>
+						</h1>
+
+						<p className="mt-4 sm:text-xl/relaxed text-[#FFB22C]/80 mb-5">
+							An easy way to write, preview, and refine Markdown.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div className="min-h-screen">
+				<Editor />
+			</div>
+		</>
 	);
 }
