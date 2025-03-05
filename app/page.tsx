@@ -4,7 +4,7 @@ export default function Home() {
 	return (
 		<>
 			<div className="h-fit">
-				<div className="mx-auto max-w-screen-xl px-4 py-20">
+				<div className="mx-auto max-w-screen-xl px-4 pb-10 py-32">
 					<div className="mx-auto max-w-3xl text-center">
 						<h1 className="text-3xl font-extrabold sm:text-7xl text-[#F7F7F7]">
 							Write in Markdown
